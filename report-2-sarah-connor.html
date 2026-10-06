@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Credit 3-B Report - Sarah M. Connor</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 13px;
+            color: #000;
+            background-color: #fff;
+            margin: 20px auto;
+            max-width: 900px;
+            line-height: 1.4;
+        }
+
+        h1 {
+            font-size: 20px;
+            border-bottom: 2px solid #000;
+            padding-bottom: 5px;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        h2 {
+            font-size: 13px;
+            background-color: #f2f2f2;
+            padding: 6px 8px;
+            margin-top: 25px;
+            margin-bottom: 10px;
+            border: 1px solid #777;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+
+        .meta-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+
+        .meta-table td {
+            border: none;
+            padding: 4px 0;
+            vertical-align: top;
+            font-size: 12px;
+        }
+
+        table.data-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 15px;
+        }
+
+        table.data-table th, table.data-table td {
+            border: 1px solid #666;
+            padding: 6px 8px;
+            text-align: left;
+            font-size: 12px;
+        }
+
+        table.data-table th {
+            background-color: #eaeaea;
+            font-weight: bold;
+        }
+
+        .text-center { text-align: center; }
+        .bold { font-weight: bold; }
+
+        .pay-grid {
+            font-family: monospace;
+            font-size: 11px;
+            text-align: center;
+        }
+
+        .pay-grid td {
+            padding: 4px 2px;
+        }
+
+        @media print {
+            .no-print { display: none !important; }
+            body {
+                max-width: 100%;
+                margin: 0;
+                font-size: 11pt;
+            }
+            h2 {
+                background-color: #ddd !important;
+                -webkit-print-color-adjust: exact;
+                print-color-adjust: exact;
+            }
+            table.data-table th {
+                background-color: #eee !important;
+                -webkit-print-color-adjust: exact;
+                print-color-adjust: exact;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<!--Navigation Back To menu and Print pdf Button-->
+<body>
+    <div style="margin-bottom: 20px; display: flex; justify-content: space-between; align-items: center;" class="no-print">
+    <a href="./index.html" style="text-decoration: none; font-weight: bold; font-size: 12px; color: #000;">&larr; Back to Demo Menu</a>
+    <button onclick="window.print()" style="padding: 6px 14px; background: #000; color: #fff; border: none; cursor: pointer; font-size: 12px; font-weight: bold; border-radius: 3px;">
+        Print / Save to PDF
+    </button>
+</div>
+
+    <h1>Smart Credit 3-Bureau Credit Report</h1>
+
+    <!-- HEADER / BORROWER META INFORMATION -->
+    <table class="meta-table">
+        <tr>
+            <td width="50%"><strong>Borrower Name:</strong> SARAH M. CONNOR</td>
+            <td width="50%"><strong>Report Date:</strong> October 6, 2026</td>
+        </tr>
+        <tr>
+            <td><strong>Current Address:</strong> 1814 Cyberdyne Way, Los Angeles, CA 90001</td>
+            <td><strong>Reference Number:</strong> SC-3B-88104</td>
+        </tr>
+        <tr>
+            <td><strong>Date of Birth:</strong> 05/12/1979</td>
+            <td><strong>SSN (Last 4):</strong> XXX-XX-9102</td>
+        </tr>
+    </table>
+
+    <!-- SECTION 1: PERSONAL INFORMATION -->
+    <h2>1. Personal Information Summary</h2>
+    <table class="data-table">
+        <thead>
+            <tr>
+                <th width="22%">Data Field</th>
+                <th width="26%">TransUnion</th>
+                <th width="26%">Experian</th>
+                <th width="26%">Equifax</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="bold">Name</td>
+                <td>Sarah M. Connor</td>
+                <td>Sarah Connor</td>
+                <td>Sarah M. Connor</td>
+            </tr>
+            <tr>
+                <td class="bold">Also Known As</td>
+                <td>Sarah Reese</td>
+                <td>--</td>
+                <td>Sarah Connor-Reese</td>
+            </tr>
+            <tr>
+                <td class="bold">Current Address</td>
+                <td>1814 Cyberdyne Way<br>Los Angeles, CA 90001</td>
+                <td>1814 Cyberdyne Way<br>Los Angeles, CA 90001</td>
+                <td>1814 Cyberdyne Way<br>Los Angeles, CA 90001</td>
+            </tr>
+            <tr>
+                <td class="bold">Employer</td>
+                <td>TechCom Solutions</td>
+                <td>Not Reported</td>
+                <td>TechCom Solutions</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- SECTION 2: CREDIT SCORES -->
+    <h2>2. Credit Scores & Ranking</h2>
+    <table class="data-table">
+        <thead>
+            <tr>
+                <th width="25%">Bureau</th>
+                <th width="25%" class="text-center">TransUnion</th>
+                <th width="25%" class="text-center">Experian</th>
+                <th width="25%" class="text-center">Equifax</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="bold">Credit Score</td>
+                <td class="text-center bold">605</td>
+                <td class="text-center bold">598</td>
+                <td class="text-center bold">612</td>
+            </tr>
+            <tr>
+                <td class="bold">Score Model</td>
+                <td class="text-center">VantageScore 3.0</td>
+                <td class="text-center">VantageScore 3.0</td>
+                <td class="text-center">VantageScore 3.0</td>
+            </tr>
+            <tr>
+                <td class="bold">Score Scale</td>
+                <td class="text-center">300 - 850</td>
+                <td class="text-center">300 - 850</td>
+                <td class="text-center">300 - 850</td>
+            </tr>
+            <tr>
+                <td class="bold">Lender Rating</td>
+                <td class="text-center">Poor</td>
+                <td class="text-center">Poor</td>
+                <td class="text-center">Fair</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- SECTION 3: ACCOUNT SUMMARY -->
+    <h2>3. Credit Account Summary</h2>
+    <table class="data-table">
+        <thead>
+            <tr>
+                <th>Summary Metric</th>
+                <th class="text-center">TransUnion</th>
+                <th class="text-center">Experian</th>
+                <th class="text-center">Equifax</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Total Accounts</td>
+                <td class="text-center">8</td>
+                <td class="text-center">8</td>
+                <td class="text-center">8</td>
+            </tr>
+            <tr>
+                <td>Open Accounts</td>
+                <td class="text-center">3</td>
+                <td class="text-center">3</td>
+                <td class="text-center">3</td>
+            </tr>
+            <tr>
+                <td>Closed Accounts</td>
+                <td class="text-center">5</td>
+                <td class="text-center">5</td>
+                <td class="text-center">5</td>
+            </tr>
+            <tr>
+                <td>Delinquent Accounts</td>
+                <td class="text-center">2</td>
+                <td class="text-center">2</td>
+                <td class="text-center">2</td>
+            </tr>
+            <tr>
+                <td>Derogatory Accounts</td>
+                <td class="text-center">1</td>
+                <td class="text-center">1</td>
+                <td class="text-center">1</td>
+            </tr>
+            <tr>
+                <td>Total Balances</td>
+                <td class="text-center">$28,400</td>
+                <td class="text-center">$28,400</td>
+                <td class="text-center">$28,400</td>
+            </tr>
+            <tr>
+                <td>Monthly Payments</td>
+                <td class="text-center">$520</td>
+                <td class="text-center">$520</td>
+                <td class="text-center">$520</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- SECTION 4: TRADE LINES -->
+    <h2>4. Trade Lines (Credit Accounts Detail)</h2>
+
+    <!-- Account 1 -->
+    <table class="data-table">
+        <thead>
+            <tr>
+                <th colspan="4">CAPITAL ONE - SECURED CARD (#5178-XXXX-XXXX-4091)</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="bold" width="25%">Account Type</td>
+                <td width="25%">Revolving Credit</td>
+                <td class="bold" width="25%">Pay Status</td>
+                <td width="25%">30 Days Past Due</td>
+            </tr>
+            <tr>
+                <td class="bold">Account Status</td>
+                <td>Open / Delinquent</td>
+                <td class="bold">Responsibility</td>
+                <td>Individual</td>
+            </tr>
+            <tr>
+                <td class="bold">Balance</td>
+                <td>$1,850</td>
+                <td class="bold">Credit Limit</td>
+                <td>$2,000</td>
+            </tr>
+            <tr>
+                <td class="bold">Monthly Payment</td>
+                <td>$60</td>
+                <td class="bold">Past Due Amount</td>
+                <td>$120</td>
+            </tr>
+            <tr>
+                <td class="bold">Date Opened</td>
+                <td>11/04/2021</td>
+                <td class="bold">Date Last Reported</td>
+                <td>09/20/2026</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <table class="data-table">
+        <thead>
+            <tr>
+                <th colspan="12">24-Month Payment History (Recent to Oldest)</th>
+            </tr>
+        </thead>
+        <tbody class="pay-grid">
+            <tr>
+                <td>30</td><td>OK</td><td>OK</td><td>OK</td><td>30</td><td>OK</td>
+                <td>OK</td><td>OK</td><td>OK</td><td>OK</td><td>OK</td><td>OK</td>
+            </tr>
+            <tr>
+                <td>OK</td><td>OK</td><td>OK</td><td>OK</td><td>OK</td><td>OK</td>
+                <td>OK</td><td>OK</td><td>OK</td><td>OK</td><td>OK</td><td>OK</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- Account 2 (Collection) -->
+    <table class="data-table">
+        <thead>
+            <tr>
+                <th colspan="4">MIDLAND CREDIT MANAGEMENT - COLLECTION (#MCM-990182)</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="bold" width="25%">Account Type</td>
+                <td width="25%">Collection Account</td>
+                <td class="bold" width="25%">Pay Status</td>
+                <td width="25%">In Collections / Unpaid</td>
+            </tr>
+            <tr>
+                <td class="bold">Original Creditor</td>
+                <td>CITIBANK N.A.</td>
+                <td class="bold">Responsibility</td>
+                <td>Individual</td>
+            </tr>
+            <tr>
+                <td class="bold">Balance</td>
+                <td>$4,310</td>
+                <td class="bold">Original Debt</td>
+                <td>$3,800</td>
+            </tr>
+            <tr>
+                <td class="bold">Monthly Payment</td>
+                <td>$0</td>
+                <td class="bold">Past Due Amount</td>
+                <td>$4,310</td>
+            </tr>
+            <tr>
+                <td class="bold">Date Placed</td>
+                <td>02/14/2024</td>
+                <td class="bold">Date Last Reported</td>
+                <td>08/30/2026</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <table class="data-table">
+        <thead>
+            <tr>
+                <th colspan="12">24-Month Payment History (Recent to Oldest)</th>
+            </tr>
+        </thead>
+        <tbody class="pay-grid">
+            <tr>
+                <td>CO</td><td>CO</td><td>CO</td><td>CO</td><td>CO</td><td>CO</td>
+                <td>CO</td><td>CO</td><td>CO</td><td>CO</td><td>CO</td><td>CO</td>
+            </tr>
+            <tr>
+                <td>CO</td><td>CO</td><td>CO</td><td>CO</td><td>CO</td><td>CO</td>
+                <td>CO</td><td>CO</td><td>CO</td><td>CO</td><td>CO</td><td>CO</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- SECTION 5: HARD INQUIRIES -->
+    <h2>5. Hard Credit Inquiries</h2>
+    <table class="data-table">
+        <thead>
+            <tr>
+                <th>Creditor / Organization</th>
+                <th>Bureau</th>
+                <th>Date of Inquiry</th>
+                <th>Inquiry Type / Purpose</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>MIDLAND CREDIT MGMT</td>
+                <td>TransUnion</td>
+                <td>08/14/2026</td>
+                <td>Collection Inquiry</td>
+            </tr>
+            <tr>
+                <td>CAPITAL ONE BANK</td>
+                <td>Experian</td>
+                <td>11/01/2021</td>
+                <td>Credit Card Application</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- SECTION 6: PUBLIC RECORDS -->
+    <h2>6. Public Records</h2>
+    <table class="data-table">
+        <thead>
+            <tr>
+                <th>Record Type</th>
+                <th>Court / Reference #</th>
+                <th>Filing Date</th>
+                <th>Current Status</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Chapter 7 Bankruptcy</td>
+                <td>LA County Court / BK-2023-00921</td>
+                <td>04/10/2023</td>
+                <td>Discharged (07/22/2023)</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- SECTION 7: CREDITOR CONTACT DIRECTORY -->
+    <h2>7. Creditor Contact Information</h2>
+    <table class="data-table">
+        <thead>
+            <tr>
+                <th>Creditor Name</th>
+                <th>Address</th>
+                <th>Phone Number</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Capital One Financial Services</td>
+                <td>P.O. Box 30285, Salt Lake City, UT 84130</td>
+                <td>(800) 955-7070</td>
+            </tr>
+            <tr>
+                <td>Midland Credit Management</td>
+                <td>350 Camino de la Reina, San Diego, CA 92108</td>
+                <td>(800) 825-8131</td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+</html>
